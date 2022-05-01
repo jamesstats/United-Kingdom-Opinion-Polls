@@ -1,3 +1,6 @@
 jupyterlab
 nbclient
 pandas 
+lxml
+libxml2
+libxslt
