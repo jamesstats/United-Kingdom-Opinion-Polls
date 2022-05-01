@@ -28,7 +28,7 @@ jobs:
       run: |
         git config --local user.name actions-user
         git config --local user.email "actions@github.com"
-        git add data/*
+        git add Data/*
         git commit -am "U.K OpinionPolls $(date)"
         git push origin main
       env:
