@@ -1,32 +1,32 @@
- on:
+on:
   push:
    branches: main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
- jobs:
+jobs:
 # This workflow contains a single job called "build"
- build:
+  build:
 # The type of runner that the job will run on
- runs-on: macos-latest
+   runs-on: macos-latest
 
 # Steps represent a sequence of tasks that will be executed as part of the job
- steps:
+steps:
 # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
    - id: repo 
-      name: Repo Checkout
-      uses: actions/checkout@v2
+     name:   
+         uses: actions/checkout@v2
 #repo
    - id: python
-      name: Python Setup & Packages Installation
-      uses: actions/setup-python@v2
-      with:
-       python-version: '3.9'
-        cache: 'pip'
-      - run: pip install -r requirements.txt
+        name:
+        uses: actions/setup-python@v2
+        with:
+            python-version: '3.9' 
+            cache: 'pip'
+            - run: pip install -r requirements.txt
 
      - id: jupyter 
        name: Jupyter Notebook Execution
-       run: jupyter execute U_K_Polling.ipynb
+       run:  jupyter execute U_K_Polling.ipynb
 shell: bash 
 
 # Add new files in folder, commit along with other modified files, push
