@@ -1,2 +1,2 @@
 # United-Kingdom-Opinion-Polls
-United Kingdom next general election opinion polling.
+Consolidating United Kingdom next general election opinion polling from wikipedia for easy use.
