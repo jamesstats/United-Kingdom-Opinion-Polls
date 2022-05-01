@@ -18,4 +18,4 @@ colnames(u_k)<-c('Date','Pollster','Area','Con','Lab','LibDem','SNP','Green','Le
 u_k<-u_k[-c(1),]
 u_k<-u_k[-c(47),]
 u_k<-u_k[-c(69),] 
-write_csv(u_k,paste0('data/',Sys.Date(),'_OpinionPolls','.csv'))   
+write_csv(u_k,paste0('Data/',Sys.Date(),'_OpinionPolls','.csv'))   
