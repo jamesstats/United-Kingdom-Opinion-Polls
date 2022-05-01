@@ -15,6 +15,9 @@ jobs:
       - id: repo 
         name: Repo Checkout
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
       - id: python
         name: Python Setup & Packages Installation
