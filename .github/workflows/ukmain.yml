@@ -42,7 +42,7 @@ jobs:
 
           git add all_polls.csv
 
-          git commit -am "UK OpinionPolls $(date)"
+          git commit -am "UK Opinion Polls $(date)"
 
           git push origin main
 
