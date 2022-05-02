@@ -3,9 +3,9 @@ on:
     push: 
       branches: main 
 jobs:
-    autoscrape: 
-runs-on: macos-latest
-  steps:
+        autoscrape: 
+        runs-on: macos-latest
+        steps:
       - name: Checkout
         uses: actions/checkout@v2      
       - name: Setup Python
