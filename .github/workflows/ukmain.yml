@@ -29,7 +29,7 @@ jobs:
 
       - id: jupyter 
         name: Jupyter Notebook Execution
-        run: jupyter execute U_K_Polling.py
+        run: jupyter execute U_K_Polling.ipynb
         shell: bash 
 
  # Add new files in folder, commit along with other modified files, push
